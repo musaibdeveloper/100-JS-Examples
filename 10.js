@@ -8,9 +8,17 @@ let num = +prompt("Enter the number : ")
 if(num === 1){
     console.log("1 is neither prime nor composite number");
 }
-else if(num > 1){
-    console.log("Number is prime");
+else if(num < 1){
+    console.log("Number is not prime");
 }
 else {
-    console.log("number os not prime");
+    for(let i = 2 ; i<num ; i++)
+
+     if(num%i == 0){
+        console.log("NUmber is not prime");
+        break;
+     } else{
+        console.log("number is prime");
+     }
+    
 }
